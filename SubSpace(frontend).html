@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { font-family: "Liberation Mono", monospace; font-size: 10pt; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Fintech Platform&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    nav li {
+      margin-right: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+    }
+    section {
+      background-color: #f7f7f7;
+      padding: 2em;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-weight: 300;
+      margin-top: 0;
+    }
+    .dashboard-widgets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .widget {
+      background-color: #fff;
+      padding: 1em;
+      margin: 10px;
+      width: calc(33.33% - 20px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .widget h2 {
+      font-weight: 400;
+      margin-top: 0;
+    }
+    #transaction-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #transaction-form label {
+      margin-bottom: 10px;
+    }
+    #transaction-form input, #transaction-form select {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#dashboard&quot;&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#transactions&quot;&gt;Transactions&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#accounts&quot;&gt;Accounts&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;section id=&quot;dashboard&quot;&gt;
+      &lt;h1&gt;Welcome to Fintech Platform&lt;/h1&gt;
+      &lt;div class=&quot;dashboard-widgets&quot;&gt;
+        &lt;div class=&quot;widget&quot;&gt;
+          &lt;h2&gt;Account Balance&lt;/h2&gt;
+          &lt;p&gt;View your current account balance&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;widget&quot;&gt;
+          &lt;h2&gt;Recent Transactions&lt;/h2&gt;
+          &lt;p&gt;View your recent transactions&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;widget&quot;&gt;
+          &lt;h2&gt;Financial Goals&lt;/h2&gt;
+          &lt;p&gt;Set and track your financial goals&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id=&quot;transactions&quot;&gt;
+      &lt;h1&gt;Transactions&lt;/h1&gt;
+      &lt;form id=&quot;transaction-form&quot;&gt;
+        &lt;label&gt;Account ID:&lt;/label&gt;
+        &lt;input type=&quot;number&quot; id=&quot;account-id&quot;&gt;
+        &lt;br&gt;
+        &lt;label&gt;Amount:&lt;/label&gt;
+        &lt;input type=&quot;number&quot; id=&quot;amount&quot;&gt;
+        &lt;br&gt;
+        &lt;label&gt;Type:&lt;/label&gt;
+        &lt;select id=&quot;type&quot;&gt;
+          &lt;option value=&quot;deposit&quot;&gt;Deposit&lt;/option&gt;
+          &lt;option value=&quot;withdrawal&quot;&gt;Withdrawal&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;br&gt;
+        &lt;button id=&quot;transaction-btn&quot;&gt;Submit&lt;/button&gt;
+      &lt;/form&gt;
+      &lt;div id=&quot;transaction-output&quot;&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id=&quot;accounts&quot;&gt;
+      &lt;h1&gt;Accounts&lt;/h1&gt;
+      &lt;ul id=&quot;account-list&quot;&gt;
+        &lt;li&gt;Account 1&lt;/li&gt;
+        &lt;li&gt;Account 2&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
