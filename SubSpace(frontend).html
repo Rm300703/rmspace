@@ -1,24 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.4.7.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="00:00:00"/>
-	<style type="text/css">
-		@page { size: 8.27in 11.69in; margin: 0.79in }
-		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
-		pre { font-family: "Liberation Mono", monospace; font-size: 10pt; background: transparent }
-	</style>
-</head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;title&gt;Fintech Platform&lt;/title&gt;
-  &lt;style&gt;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintech Platform</title>
+  <style>
     body {
       font-family: 'Open Sans', sans-serif;
       margin: 0;
@@ -91,64 +77,62 @@
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;header&gt;
-    &lt;nav&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;#dashboard&quot;&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#transactions&quot;&gt;Transactions&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#accounts&quot;&gt;Accounts&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/nav&gt;
-  &lt;/header&gt;
-  &lt;main&gt;
-    &lt;section id=&quot;dashboard&quot;&gt;
-      &lt;h1&gt;Welcome to Fintech Platform&lt;/h1&gt;
-      &lt;div class=&quot;dashboard-widgets&quot;&gt;
-        &lt;div class=&quot;widget&quot;&gt;
-          &lt;h2&gt;Account Balance&lt;/h2&gt;
-          &lt;p&gt;View your current account balance&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;widget&quot;&gt;
-          &lt;h2&gt;Recent Transactions&lt;/h2&gt;
-          &lt;p&gt;View your recent transactions&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;widget&quot;&gt;
-          &lt;h2&gt;Financial Goals&lt;/h2&gt;
-          &lt;p&gt;Set and track your financial goals&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/section&gt;
-    &lt;section id=&quot;transactions&quot;&gt;
-      &lt;h1&gt;Transactions&lt;/h1&gt;
-      &lt;form id=&quot;transaction-form&quot;&gt;
-        &lt;label&gt;Account ID:&lt;/label&gt;
-        &lt;input type=&quot;number&quot; id=&quot;account-id&quot;&gt;
-        &lt;br&gt;
-        &lt;label&gt;Amount:&lt;/label&gt;
-        &lt;input type=&quot;number&quot; id=&quot;amount&quot;&gt;
-        &lt;br&gt;
-        &lt;label&gt;Type:&lt;/label&gt;
-        &lt;select id=&quot;type&quot;&gt;
-          &lt;option value=&quot;deposit&quot;&gt;Deposit&lt;/option&gt;
-          &lt;option value=&quot;withdrawal&quot;&gt;Withdrawal&lt;/option&gt;
-        &lt;/select&gt;
-        &lt;br&gt;
-        &lt;button id=&quot;transaction-btn&quot;&gt;Submit&lt;/button&gt;
-      &lt;/form&gt;
-      &lt;div id=&quot;transaction-output&quot;&gt;&lt;/div&gt;
-    &lt;/section&gt;
-    &lt;section id=&quot;accounts&quot;&gt;
-      &lt;h1&gt;Accounts&lt;/h1&gt;
-      &lt;ul id=&quot;account-list&quot;&gt;
-        &lt;li&gt;Account 1&lt;/li&gt;
-        &lt;li&gt;Account 2&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/section&gt;
-  &lt;/main&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#transactions">Transactions</a></li>
+        <li><a href="#accounts">Accounts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="dashboard">
+      <h1>Welcome to Fintech Platform</h1>
+      <div class="dashboard-widgets">
+        <div class="widget">
+          <h2>Account Balance</h2>
+          <p>View your current account balance</p>
+        </div>
+        <div class="widget">
+          <h2>Recent Transactions</h2>
+          <p>View your recent transactions</p>
+        </div>
+        <div class="widget">
+          <h2>Financial Goals</h2>
+          <p>Set and track your financial goals</p>
+        </div>
+      </div>
+    </section>
+    <section id="transactions">
+      <h1>Transactions</h1>
+      <form id="transaction-form">
+        <label>Account ID:</label>
+        <input type="number" id="account-id">
+        <br>
+        <label>Amount:</label>
+        <input type="number" id="amount">
+        <br>
+        <label>Type:</label>
+        <select id="type">
+          <option value="deposit">Deposit</option>
+          <option value="withdrawal">Withdrawal</option>
+        </select>
+        <br>
+        <button id="transaction-btn">Submit</button>
+      </form>
+      <div id="transaction-output"></div>
+    </section>
+    <section id="accounts">
+      <h1>Accounts</h1>
+      <ul id="account-list">
+        <li>Account 1</li>
+        <li>Account 2</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
